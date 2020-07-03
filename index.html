@@ -1,0 +1,109 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<img id="Chevrolet" src="img/Chevrolet.png">
+<img id="Kodak" src="img/Kodak.png">
+<img id="TDK" src="img/TDK.png">
+<img id="Virgin" src="img/Virgin.png">
+<img id="Yahoo" src="img/Yahoo.png">
+ <script>
+    Chevrolet.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        Chevrolet.style.top = timePassed / 2 + 'px';
+
+        if (timePassed > 1110) clearInterval(timer);
+
+      }, 20);
+    }
+	 Kodak.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        Kodak.style.top = timePassed / 2 + 'px';
+		Kodak.style.left = timePassed / -8 + 'px';
+
+        if (timePassed > 1009) clearInterval(timer);
+
+      }, 20);
+    }
+		 TDK.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        TDK.style.top = timePassed / 2 + 'px';
+		TDK.style.left = timePassed / 7 + 'px';
+
+        if (timePassed > 1330) clearInterval(timer);
+
+      }, 20);
+    }
+		 Virgin.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        Virgin.style.top = timePassed / 2 + 'px';
+		Virgin.style.left = timePassed / 3 + 'px';
+
+        if (timePassed > 710) clearInterval(timer);
+
+      }, 20);
+    }
+	 Yahoo.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        Yahoo.style.top = timePassed / 2 + 'px';
+		Yahoo.style.left = timePassed / -5 + 'px';
+
+        if (timePassed > 545) clearInterval(timer);
+
+      }, 20);
+    }
+  </script>
+<img src="img/backgrpund.jpg" usemap="#game">
+<map name="game" id="game">
+ <area target="" alt="TDK" title="TDK" coords="504,116,580,118,582,172,504,170" shape="poly">
+    <area target="" alt="Virgin" title="Virgin" coords="82,454,97,413,106,417,102,443,124,378,133,362,139,367,136,387,125,400,115,425,123,433,139,425,137,409,144,410,146,424,152,419,150,441,157,440,154,449,126,480,115,532,103,535,110,502,85,532,81,521,87,470" shape="poly">
+    <area target="" alt="Yahoo" title="Yahoo" coords="521,523,577,522,580,539,531,539" shape="poly">
+    <area target="" alt="Kodak" title="Kodak" coords="937,285,954,279,956,290,970,286,981,280,980,267,990,266,993,277,1005,274,1005,252,1015,254,1016,270,1031,267,1023,290,1032,314,938,341" shape="poly">
+    <area target="" alt="Chevrolet" title="Chevrolet" coords="524,228,567,225,565,245,523,242,525,259,586,259,587,275,503,274,503,259,523,261" shape="poly">
+</map>
+<div id="blink7" class="footer">
+<marquee behavior="alternate" direction="right">
+<p>Найдите следующие предметы: Virgin, Kodak, TDK, Yahoo, Chevrolet</p>
+</marquee>
+</div>
+<table>
+<tr height="70px">
+<td width="280px" bgcolor="black">
+<p> <font color="white"> <div id="center"> Найденные элементы </div> </font></p>
+</td>
+<td width="992px" bgcolor="black">
+</td>
+</tr>
+<tr>
+<td><center><button onClick="window.location.reload();" class="favorite styled">Reset Game</button></center>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
